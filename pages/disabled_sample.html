@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>RailMaster</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">
+                    <img alt="Brand" src="../images/logo3.jpg" id="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <ul class="sample list-group">
+        <li class="list-group-item">
+            <button class="alert_bar" title="Elderly" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="This tab may guide customers to parts of the arriving trains where there are more free seats, or more priority seating.">
+                    <p class="alert_bar_text"> 
+                        Elderly
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Disabled" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="This tab will provide information about disabled or step-free access to relevant stations, and how a disabled user might get to and from the station, for example by booking a suitably adapted taxi.">
+                    <p class="alert_bar_text"> 
+                        Disabled
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Pregnant" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Similar to the role of the elderly tab and illness tab. This is just another example of a section which could be involved in this part of the appl"> 
+                    <p class="alert_bar_text"> 
+                        Pregnant
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Illness." data-toggle="popover" data-trigger="focus" data-placement="top" data-content="This tab will provide fast response aid in the station, on the platforms and on the trains. Through this part of the app, medical services could be alerted ahead of the train without delaying a service, a difficulties such as heatstroke on crowded trains would be alleviated.">
+                    <p class="alert_bar_text"> 
+                        Illness
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Other" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Any other useful or sensible health and safety information or precautions will be located here."> 
+                    <p class="alert_bar_text"> 
+                        Other
+                    </p> 
+                </button>
+        </li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>

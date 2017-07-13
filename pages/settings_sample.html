@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>RailMaster</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">
+                    <img alt="Brand" src="../images/logo3.jpg" id="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <ul class="sample list-group">
+        <li class="list-group-item">
+            <button class="alert_bar" title="Account Details" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Home Town: Croydon">
+                    <p class="alert_bar_text"> 
+                        Account Details
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Coming Soon..." data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Personal details in this app are not yet secure.">
+                    <p class="alert_bar_text"> 
+                        Security Settings
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Contact Us" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="We'd rather you didn't.'"> 
+                    <p class="alert_bar_text"> 
+                        Contact Us
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Coming Soon..." data-toggle="popover" data-trigger="focus" data-placement="top" data-content="There are no preferences to set at this moment in time.">
+                    <p class="alert_bar_text"> 
+                        Notification Preferences
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Privacy Policy" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="We share your private data with as many people as possible!"> 
+                    <p class="alert_bar_text"> 
+                        Privacy Policy
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="Coming Soon..." data-toggle="popover" data-trigger="focus" data-placement="top" data-content="You are not allowed to sign out just yet..."> 
+                    <p class="alert_bar_text"> 
+                        Sign Out
+                    </p> 
+                </button>
+        </li>
+        <li class="list-group-item">
+            <button class="alert_bar" title="T&C" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="We don't have any of these yet..."> 
+                    <p class="alert_bar_text"> 
+                        Terms & Conditions
+                    </p> 
+                </button>
+        </li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+</body>
+
+</html>
